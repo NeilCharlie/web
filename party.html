@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebenque Clan Christmas Party</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #cc0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Countdown Section */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .countdown div {
+            background: #cc0000;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            text-align: center;
+            width: 100px;
+        }
+
+        /* Slideshow Section */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            max-height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .event-details {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-details h2 {
+            margin-bottom: 10px;
+            color: #cc0000;
+        }
+
+        .event-details p {
+            margin: 10px 0;
+        }
+
+        /* Notes Section */
+        .notes {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .notes h3 {
+            color: #cc0000;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .notes p {
+            margin: 5px 0;
+        }
+
+        /* RSVP Form Section */
+        .form-container {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .form-container h3 {
+            margin-bottom: 15px;
+            color: #cc0000;
+        }
+
+        .form-container a {
+            text-decoration: none;
+        }
+
+        .form-container button {
+            background: #cc0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #990000;
+        }
+
+        /* Footer */
+        footer {
+            background: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1em; /* Default size */
+            z-index: 10; /* To ensure it stays on top of other content */
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .countdown div {
+                width: 70px;
+                font-size: 1.2em;
+                padding: 15px;
+            }
+
+            .event-details,
+            .notes,
+            .form-container {
+                margin: 10px auto;
+                padding: 15px;
+            }
+
+            footer {
+              margin-top:10px;
+                padding: 12px;
+                font-size: 0.9em;
+            }
+
+            .slideshow-container {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown div {
+                width: 50px;
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .event-details,
+            .notes,
+            .form-container {
+                padding: 10px;
+            }
+
+            footer {
+              margin-top: 10px;
+                padding: 10px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rebenque Clan Christmas Party</h1>
+    </header>
+    <div class="container">
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <img class="mySlides" src="1.jpeg" alt="Image 1">
+            <img class="mySlides" src="7.jpeg" alt="Image 2">
+            <img class="mySlides" src="3.jpeg" alt="Image 3">
+             <img class="mySlides" src="4.jpeg" alt="Image 3">
+              <img class="mySlides" src="5.jpeg" alt="Image 3"> <img class="mySlides" src="6.jpeg" alt="Image 3"> 
+              <img class="mySlides" src="2.jpeg" alt="Image 3">
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="countdown">
+            <div id="days">00<br>Days</div>
+            <div id="hours">00<br>Hours</div>
+            <div id="minutes">00<br>Minutes</div>
+            <div id="seconds">00<br>Seconds</div>
+        </div>
+
+        <!-- Event Details Section -->
+        <div class="event-details">
+            <h2>Event Details</h2>
+            <p><strong>Location:</strong> Casimiro Village Clubhouse</p>
+            <p><strong>Date:</strong> December 22, 2024</p>
+            <p><strong>Time:</strong> 12 PM - 4 PM</p>
+        </div>
+
+        <!-- Important Notes Section -->
+        <div class="notes">
+            <h3>Important Notes</h3>
+            <p><strong>Gcash:</strong> Ferdinand R - 09067652056</p>
+            <p><strong>Payment:</strong> ₱900 per family</p>
+            <p><strong>Calling for:</strong></p>
+            <ul>
+                <li>Niro Family</li>
+                <li> Diding Rebenque and Family</li>
+                <li> Lita Rebenque and Family</li>
+                <li> Susan and Family</li>
+                <li>Reyes Family</li>
+            </ul>
+            <p><strong>Sound System:</strong> <br /> Rhona and Raffy</p>
+            <p><strong>Thank You!</strong></p>
+        </div>
+
+        <!-- RSVP Form Section -->
+        <div class="form-container">
+            <h3>Headcount Form</h3>
+            <p>Please click the button :</p>
+            <a href="https://forms.gle/aAoXdqa2rXihKZGB8">
+                <button>Form</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>We can't wait to celebrate with you!</p>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        const countdown = () => {
+            const eventDate = new Date('December 22, 2024 12:00:00').getTime();
+            const now = new Date().getTime();
+            const gap = eventDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const days = Math.floor(gap / day);
+            const hours = Math.floor((gap % day) / hour);
+            const minutes = Math.floor((gap % hour) / minute);
+            const seconds = Math.floor((gap % minute) / second);
+
+            document.getElementById('days').innerHTML = days + '<br>Days';
+            document.getElementById('hours').innerHTML = hours + '<br>Hours';
+            document.getElementById('minutes').innerHTML = minutes + '<br>Minutes';
+            document.getElementById('seconds').innerHTML = seconds + '<br>Seconds';
+        };
+
+        setInterval(countdown, 1000);
+
+        // Slideshow Functionality
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
